@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  comment_id: 
-  tag_id: 
+  body: MyString
 
 two:
-  comment_id: 
-  tag_id: 
+  body: MyString
