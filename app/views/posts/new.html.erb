@@ -1,0 +1,20 @@
+<h1>New Blog Post!</h1>
+
+    <%= form_for @post, url: create_post_path do |f| %>
+
+    <div>
+      <%= f.label :title, "Title" %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div>
+      <%= f.label :blogContent, "Content" %>
+      <%= f.text_area :blogContent %>
+    </div>
+
+    <%= f.submit "Submit Blog Post!" %>
+    <%end%>
+
+
+
+

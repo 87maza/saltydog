@@ -15,3 +15,20 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(function () {
+    // Calling Login Form
+    $("#login_form").click(function () {
+        $(".user_login").show();
+        return false;
+    });
+
+    // Calling Register Form
+    $("#register_form").click(function () {
+        $(".user_login").hide();
+        $(".user_register").show();
+        $(".header_title").text('Register');
+        return false;
+    });
+
+})
