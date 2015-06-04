@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   get 'posts/index' => 'posts#index', as: :posts
   get 'posts/new' => 'posts#new', as: :new_post
   post 'posts/'=> 'posts#create', as: :create_post
+  get "posts/:id/edit" => "posts#edit", as: :edit_post
+  patch "posts/:id/edit" => "posts#update", as: :update_posts
+  put "posts/:id/edit" => "posts#update", as: :post
+  delete "posts/:id" => "posts#destroy", as: :destroy_posts
+  get 'posts/by_user' => "posts#by_user", as: :post_by_user
 
   root 'actions#welcome'
   get '/welcome' => 'actions#welcome', as: :actions

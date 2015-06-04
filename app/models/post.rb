@@ -1,6 +1,8 @@
 class Post < ActiveRecord::Base
 
-  has_many :blog_comments
+  has_many :comments
   has_many :tags
+  belongs_to :user
 
-end
+
+  end

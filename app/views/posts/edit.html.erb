@@ -1,0 +1,19 @@
+<h1>Edit My Blogs!</h1>
+
+<%= form_for (@post) do |f| %>
+
+    <div>
+      <%= f.label :title, "Title" %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div>
+      <%= f.label :blogContent, "Content" %>
+      <%= f.text_area :blogContent %>
+    </div>
+
+    <%= f.submit "Submit these changes!" %>
+
+<% end %>
+
+<%= link_to "Back to the list!", posts_path %>

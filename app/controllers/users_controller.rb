@@ -4,9 +4,10 @@ class UsersController < ApplicationController
     end
 
     def create
-      if User.create user_params
+      user = User.create(user_params)
+      if user.valid?
         #User.create creates new user, and saves to db
-        flash[:success] = 'welcome to the thunderdome'
+        flash[:success] = "welcome to the thunderdome #{user.email}"
         #flash is a way to show the user a successful login message
         redirect_to users_path
       else
@@ -14,6 +15,8 @@ class UsersController < ApplicationController
         redirect_to new_user_path
       end
     end
+
+
     private
 
     def user_params
