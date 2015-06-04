@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   put "posts/:id/edit" => "posts#update", as: :post
   delete "posts/:id" => "posts#destroy", as: :destroy_posts
   get 'posts/by_user' => "posts#by_user", as: :post_by_user
+  get "/posts/:id" => "posts#show", as: :show_post
 
   root 'actions#welcome'
   get '/welcome' => 'actions#welcome', as: :actions

@@ -1,0 +1,1 @@
+# Saltydog::api_key = ENV['surf_api']
