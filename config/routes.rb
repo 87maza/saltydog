@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'posts/by_user' => "posts#by_user", as: :post_by_user
   get "/posts/:id" => "posts#show", as: :show_post
 
+  post "/posts/:id/comments" => "comments#create", as: :create_comment
+
   root 'actions#welcome'
   get '/welcome' => 'actions#welcome', as: :actions
   post '/welcome' => 'actions#welcome'

@@ -22,6 +22,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new
   end
 
   def edit
@@ -47,6 +48,10 @@ class PostsController < ApplicationController
   def by_user
     @posts = Post.where(user: current_user)
   end
+  def show
+    @post = Post.find(params[:id])
+  end
+
 
   private
   def post_params

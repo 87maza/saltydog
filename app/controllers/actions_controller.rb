@@ -6,7 +6,6 @@ class ActionsController < ApplicationController
     @response = HTTParty.get"http://magicseaweed.com/api/#{surf_api}/forecast/?spot_id=#{city_id}"
 
   end
-
 end
 
 

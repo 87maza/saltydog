@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   # validates :password_digest, presence: true, length: {in: 4..10}, confirmation: true
 
   has_many :posts
-  has_many :blog_comments
+  has_many :comments
 end

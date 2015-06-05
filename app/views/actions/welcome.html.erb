@@ -71,9 +71,8 @@
             <br>
 
         <p><%=truncate(post.blogContent, length:100)%></p>
-          <%end%>
-        <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+        <%=link_to 'Read More', show_post_path(post.id) %><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <% end %>
         <hr>
 
 
