@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<%= render 'layouts/nav'%>
+<body>
+<br>
+<br>
+<br/>
 <h1>New Blog Post!</h1>
 
     <%= form_for @post, url: create_post_path do |f| %>
@@ -14,6 +21,9 @@
 
     <%= f.submit "Submit Blog Post!" %>
     <%end%>
+
+</body>
+</html>
 
 
 

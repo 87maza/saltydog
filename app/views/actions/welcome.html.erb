@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand text-danger" href="#">SALTY DOG</a>
+          <a class="navbar-brand text-danger" href="../welcome/">SALTY DOG</a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapsible">
           <ul class="nav navbar-nav navbar-left">
@@ -31,8 +31,6 @@
                 <li><%= link_to 'My Blogs', post_by_user_path%></li>
                 <li><%=link_to 'Log-Out', destroy_session_path%></li>
             <%end%>
-
-            <li>&nbsp;</li>
            </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
@@ -50,7 +48,7 @@
         <br>
         <br/>
         <br/>
-        <iframe width="640" height="360" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4223" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"><a href="http://www.surfline.com/surf-report/hb-pier-northside-southern-california_4223/" target="_blank" title="HB Pier, Northside Surf Report and HD Surf Cam">HB Pier, Northside</a> Live HD Surf Cam.</div>
+        <iframe width="740" height="400" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4223" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"><a href="http://www.surfline.com/surf-report/hb-pier-northside-southern-california_4223/" target="_blank" title="HB Pier, Northside Surf Report and HD Surf Cam">HB Pier, Northside</a> Live HD Surf Cam.</div>
 
         <h1 class="page-header">
           Salty Dog Blog
@@ -62,9 +60,9 @@
           <% @posts.each do |post| %>
           <%=post.title%>
         </h2>
-        <p>
-          <span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM
-        </p>
+
+          <span class="glyphicon glyphicon-time"></span>
+          <h5>Posted by: <%= post.user.email %>&nbsp;&nbsp;<small><%= post.updated_at%></small></h5>
         <hr>
         <img class="img-responsive" src="https://placehold.it/900x300" alt="">
         <hr>
