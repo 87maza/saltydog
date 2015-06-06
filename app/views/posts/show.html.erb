@@ -12,6 +12,7 @@
 
 <div class="panel panel-default">
   <div class="panel-heading">
+    <%= image_tag @post.blog_pic.url %>
     <h3><%= @post.title %></h3>
     <h6>Posted by: <%= @post.user.email %>&nbsp;&nbsp;<small><%= @post.updated_at%></small></h6>
   </div>

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order("id DESC").all
   end
 
   def new
@@ -18,7 +18,6 @@ class PostsController < ApplicationController
       redirect_to new_post_path
     end
   end
-
 
   def show
     @post = Post.find(params[:id])
@@ -53,9 +52,13 @@ class PostsController < ApplicationController
   end
 
 
+# Use strong_parameters for attribute whitelisting
+# Be sure to update your create() and update() controller methods.
+
+
   private
   def post_params
-    params.require(:post).permit(:title,:blogContent)
+    params.require(:post).permit(:blog_pic, :title, :blogContent)
   end
 
 end

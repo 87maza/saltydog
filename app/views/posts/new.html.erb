@@ -6,21 +6,31 @@
 <br>
 <br/>
 <h1>New Blog Post!</h1>
+<div>
+<!--<%#= simple_form_for @post do |p| %>-->
+    <%#= p.simple_fields_for :photos do |ph| %>
+      <%#= ph.input :blog_pic, as: :file %>
+    <%# end %>
+<%#end %>
 
-    <%= form_for @post, url: create_post_path do |f| %>
+  <%= form_for @post, url: create_post_path do |f| %>
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
 
-    <div>
-      <%= f.label :title, "Title" %>
-      <%= f.text_field :title %>
-    </div>
+      <div>
+        <%= f.label :title, "Title" %>
+        <%= f.text_field :title %>
+      </div>
 
-    <div>
-      <%= f.label :blogContent, "Content" %>
-      <%= f.text_area :blogContent %>
-    </div>
+      <div>
+        <%= f.label :blogContent, "Content" %>
+        <%= f.text_area :blogContent %>
+      </div>
 
-    <%= f.submit "Submit Blog Post!" %>
-    <%end%>
+      <%= f.submit "Submit Blog Post!" %>
+      <%end%>
+</div>
+
 
 </body>
 </html>

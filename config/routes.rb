@@ -25,8 +25,12 @@ Rails.application.routes.draw do
   post 'sessions/new' => 'sessions#create', as: :create_session
   get 'sessions/destroy' => 'sessions#destroy', as: :destroy_session
 
+  get 'photos/index' => 'photos#index', as: :photos
+  post 'photos/index' => 'photos#create', as: :create_photo
+  get 'photos/new' => 'photos#new', as: :new_photos
 
-
+  # resources :posts
+  # resources :photos
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

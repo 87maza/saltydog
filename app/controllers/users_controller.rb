@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
     def new
       @user = User.new
     end
@@ -7,7 +8,7 @@ class UsersController < ApplicationController
       user = User.create(user_params)
       if user.valid?
         #User.create creates new user, and saves to db
-        flash[:success] = "welcome to the thunderdome #{user.email}"
+        flash[:success] = "There's a disturbance in the force, welcome #{user.email}"
         #flash is a way to show the user a successful login message
         redirect_to users_path
       else
