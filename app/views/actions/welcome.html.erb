@@ -72,7 +72,50 @@
         <%=link_to 'Read More', show_post_path(post.id) %><span class="glyphicon glyphicon-chevron-right"></span></a>
         <% end %>
         <hr>
+          <h2>
+            <a href="#">Croatia - Stay Wavy</a>
+          </h2>
+          <p class="lead">
+            by <a href="index.php">Martin</a>
+          </p>
+          <p><span class="glyphicon glyphicon-time"></span> Posted on June 7, 2015 at 10:45 PM</p>
+          <hr>
+          <img class="img-responsive" src="http://i284.photobucket.com/albums/ll10/averagemaza/beach_zpsgfueqpsl.jpg">
+          <hr>
+          <p>Premium Day with waves and a thousand steps!</p>
+          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
+          <hr>
+          <h2>
+            <a href="#">Long Hair - Don't Care</a>
+          </h2>
+          <p class="lead">
+            by <a href="index.php">Martin</a>
+          </p>
+          <p><span class="glyphicon glyphicon-time"></span> Posted on June 7, 2015 at 10:45 PM</p>
+          <hr>
+          <img class="img-responsive" src="http://i284.photobucket.com/albums/ll10/averagemaza/hair_zpslolimffz.jpg">
+          <hr>
+          <p>Old Days Golden!</p>
+          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          <hr>
+
+          <hr>
+          <h2>
+            <a href="#">Black's Beach - Nude Beach</a>
+          </h2>
+          <p class="lead">
+            by <a href="index.php">Martin</a>
+          </p>
+          <p><span class="glyphicon glyphicon-time"></span> Posted on June 7, 2015 at 10:45 PM</p>
+          <hr>
+          <img class="img-responsive" src="http://i284.photobucket.com/albums/ll10/averagemaza/hair_zpslolimffz.jpg">
+          <hr>
+          <p>Not so great Nude Beach, Not what I image!</p>
+          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          <hr>
 
 
         <!-- Pager -->
@@ -103,7 +146,9 @@
                               <%= select_tag "type", options_for_select([
                                                            ["Huntington Beach", "286" ],
                                                            ["Newport Beach", "246"],
-                                                           ["Africa", "3780"]]), "class" => "select1"%>
+                                                           ["Africa", "3780"],
+                                                           ['Spain', '4285'],
+                                                           ['Indo', '566'],['Japan', '606']]), "class" => "select1"%>
                               <%= submit_tag "Search", "class" => "btn btn-primary" %>
             <% end %>
 

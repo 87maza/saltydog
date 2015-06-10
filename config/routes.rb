@@ -26,9 +26,10 @@ Rails.application.routes.draw do
   get 'sessions/destroy' => 'sessions#destroy', as: :destroy_session
 
   get 'photos/index' => 'photos#index', as: :photos
-  post 'photos/index' => 'photos#create', as: :create_photo
   get 'photos/new' => 'photos#new', as: :new_photos
+  post 'photos/index' => 'photos#create', as: :create_photo
 
+  get "/photos/:id" => "photos#show", as: :show_photo
   # resources :posts
   # resources :photos
   # The priority is based upon order of creation: first created -> highest priority.

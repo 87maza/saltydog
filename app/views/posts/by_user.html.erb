@@ -12,7 +12,7 @@
 <hr>
 <div class="container">
 <% @posts.each do |post| %>
-    <%= post.title%>
+    <%= post.title%><br>
     <%= link_to "Edit this Post!", edit_post_path(post.id), method: :get%>
     <%= link_to "Delete this Post!", destroy_posts_path(post.id), method: :delete%>
 
