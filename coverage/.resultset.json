@@ -1,0 +1,96 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Martin/big_hippo/Projects/saltydog/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/actions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/application_helper.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/photos_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/posts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/controllers/users_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Martin/big_hippo/Projects/saltydog/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1434408207
+  }
+}

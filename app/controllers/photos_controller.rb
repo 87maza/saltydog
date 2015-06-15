@@ -6,11 +6,12 @@ class PhotosController < ApplicationController
     @photo =Photo.new
   end
   def create
+
     # Find our user that we should attach to
     #@photo = current_user.photos.new(photo_params)
     #or the standard create:
-    @photo = Photo.create(photo_params)
-    if @photo.valid?
+    @photo = Photo.create!(photo_params)
+    if @photo.save
       redirect_to photos_path
     else
       render 'new'
@@ -18,7 +19,7 @@ class PhotosController < ApplicationController
   end
 
   def show
-    # @photo = Photo.find(params[:id])
+    @photo = Photo.find(params[:id])
   end
 
   def photo_params

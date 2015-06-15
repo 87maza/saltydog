@@ -18,17 +18,17 @@
       <ul class="nav navbar-nav navbar-right">
 
         <%if (current_user) == nil%>
-            <li><%= link_to 'Register', new_user_path%></li>
+            <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Register">
+              Register
+            </button></li>
         <%end%>
         <%if (current_user) == nil %>
             <li><%= link_to 'Log-In', new_session_path%></li>
         <%else %>
-            <li class="email"><%=current_user.email%></li>
+            <li><%=current_user.email%></li>
             <li><%= link_to 'My Blogs', post_by_user_path%></li>
             <li><%=link_to 'Log-Out', destroy_session_path%></li>
         <%end%>
-
-        <li>&nbsp;</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>

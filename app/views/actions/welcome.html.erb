@@ -22,22 +22,24 @@
           <ul class="nav navbar-nav navbar-right">
 
             <%if (current_user) == nil%>
-            <li><%= link_to 'Register', new_user_path%></li>
+            <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Register">
+              Register
+            </button></li>
                 <%end%>
             <%if (current_user) == nil %>
-            <li><%= link_to 'Log-In', new_session_path%></li>
-            <%else %>
-                <li><%=current_user.email%></li>
-                <li><%= link_to 'My Blogs', post_by_user_path%></li>
-                <li><%=link_to 'Log-Out', destroy_session_path%></li>
-            <%end%>
-           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <li><%= link_to 'Log-In', new_session_path%></li>
+<%else %>
+    <li><%=current_user.email%></li>
+    <li><%= link_to 'My Blogs', post_by_user_path%></li>
+    <li><%=link_to 'Log-Out', destroy_session_path%></li>
+<%end%>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+</ul>
+</div>
+</div>
+</nav>
 <body>
   <div class="container">
 
@@ -216,6 +218,29 @@
 
       </div>
 
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Register">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <%= render 'layouts/reg'%>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /.row -->
 
