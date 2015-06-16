@@ -22,11 +22,7 @@ RSpec.describe UsersController, :type => :controller do
   end
 
   it "redirects to users path with params" do
-    user_params = {
-        email: "test@test.com",
-        password: ",./!#%^&*$@",
-        password_confirmation: ",./!#%^&*$@"
-    }
+    user_params = FactoryGirl.attributes_for(:matching_pw)
     post :create, user: user_params
     expect(response).to redirect_to(:users)
   end

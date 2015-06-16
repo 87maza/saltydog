@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 
   get 'sessions/new' => 'sessions#new', as: :new_session
   post 'sessions/new' => 'sessions#create', as: :create_session
-  get 'sessions/destroy' => 'sessions#destroy', as: :destroy_session
+ get 'sessions/destroy' => 'sessions#destroy', as: :destroy_session
 
   get 'photos/index' => 'photos#index', as: :photos
   get 'photos/new' => 'photos#new', as: :new_photos
