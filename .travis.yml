@@ -1,11 +1,18 @@
 language: ruby
 rvm:
-  - 2.0.0-p481
+- 2.0.0-p481
 branches:
   only:
-    - master
+  - master
 install:
-  - "travis_retry bundle install"  
-
+- travis_retry bundle install
 before_script:
-  - psql -c 'create database saltydog_test' -U postgres
+- psql -c 'create database saltydog_test;' -U postgres
+deploy:
+  provider: heroku
+  api_key:
+    secure: uHiC+KNMnELQo5jYuYKs5OV2WrQC3/oQXaGVqjyIHRx9igFXruFil8UPiHMzvIvdIAkoMBKYgJYQyuBY5zBgz0lDx/oEJ614FMwfV0pwTg9Rg2iM/o7YiGLrw07lblFG/ddlnQAAlgOWA+KETEhjh1xPZln0B7551b7Jr4JBzGiWkc7OpGiHkglOAYVPTvBN2r8A8456+t0BShb/M//gcvG6+ryka8r6OvfTntraDJ6h88P2Smgru/5OmG5pIaMw1Wu1MAY8LNMb5Dvbp6LHXhoNQwCNEhA9cqICPOwlDiESWsEfk6yZN1Xr3nD50WKjxgLbh7ukK/y9itXOKhzGngcbXBao7dQG2kJrem6AjnNQfS4TJh4xl88OjhzhF0R3eUrjTV2IMG++vKOsTms8AVMEa1umDoM4hd6AhBAxDuiwVD6MeN4NHYFsFK3DH1MYTsRL+SSHZLKQt0LUuLT2bohd3ChZTOsUVr0lgyQNLTx74t2JYDvBpHn/LBL3VS+9zlraoVq9BVSUiK4ClKCvD6sxcKFmAoBSgshndXaG3/NlfjudcFRA+ZR+/QybpGIEPkkSfzbMvORL7LEULg7l+ahELK90s/xGpvZYFephBQ6dE/AtWj+aKhSsfXOGafa2RmDEKmbhZk/naejf89akiUfjwOkyedMkO3Ezd34nhaQ=
+  app: young-cove-1998
+  run:
+    - "rake db:migrate"
+    - restart

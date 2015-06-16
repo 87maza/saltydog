@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34325455-e452-4dcd-a714-8289e811f14e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="saltydog.iws" />
@@ -112,8 +111,8 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06864989">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.6864989">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -123,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="25" />
+              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -585,7 +584,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="databa&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/database.yml&#10;tr&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/.travis.yml&#10;database.yml&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/database.yml&#10;gem&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/Gemfile&#10;application.yml&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;routes&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/routes.rb&#10;rou&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/routes.rb&#10;coverage&#9;null&#9;null&#10;users&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/spec/factories/users.rb&#10;rails_he&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/spec/rails_helper.rb&#10;welcom&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/actions/welcome.html.erb&#10;dev&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;D&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;d&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;secrets&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/secrets.yml&#10;show&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/posts/show.html.erb&#10;show.&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/posts/show.html.erb&#10;application&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;appli&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;sessions&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/controllers/sessions_controller.rb&#10;user.rb&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/models/user.rb&#10;gemfile&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/Gemfile&#10;salty&#9;null&#9;null&#10;turbo&#9;null&#9;null&#10;favicon&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/public/favicon.ico" />
+    <property name="SearchEverywhereHistoryKey" value="tra&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/.travis.yml&#10;data&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/database.yml&#10;databa&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/database.yml&#10;tr&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/.travis.yml&#10;database.yml&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/database.yml&#10;gem&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/Gemfile&#10;application.yml&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;routes&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/routes.rb&#10;rou&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/routes.rb&#10;coverage&#9;null&#9;null&#10;users&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/spec/factories/users.rb&#10;rails_he&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/spec/rails_helper.rb&#10;welcom&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/actions/welcome.html.erb&#10;dev&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;D&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;d&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/environments/development.rb&#10;secrets&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/secrets.yml&#10;show&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/posts/show.html.erb&#10;show.&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/views/posts/show.html.erb&#10;application&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;appli&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/config/application.yml&#10;sessions&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/controllers/sessions_controller.rb&#10;user.rb&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/app/models/user.rb&#10;gemfile&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/Gemfile&#10;salty&#9;null&#9;null&#10;turbo&#9;null&#9;null&#10;favicon&#9;FILE&#9;file:///Users/Martin/big_hippo/Projects/saltydog/public/favicon.ico" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -1126,14 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1161,15 +1152,23 @@
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="25" />
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06864989">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6864989">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
