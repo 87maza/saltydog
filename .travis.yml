@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.0.0
+  - 2.0.0-481
 branches:
   only:
     - master
@@ -8,4 +8,4 @@ install:
   - "travis_retry bundle install"  
 
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - psql -c 'create database saltydog_test' -U postgres
